@@ -12,7 +12,7 @@
 
 6. Below is the description of variables in nba2018.csv
 
-- For any missing values, they represented as 'NA' 
+- For any missing values, they are represented as 'NA' 
 
 name | description | units of measurement 
 ------|-------------|----------------------
