@@ -3,12 +3,16 @@ Data Dictionary for nba2018.csv
 
 1.  Description: This is the data on NBA player statistics
 
-2.  Main source: www.basketball-reference.com
+2.  number of rows = 477
 
-3.  Sample link for Golden State Warriors data source:
+3.  number of columns = 38
+
+4.  Main source: www.basketball-reference.com
+
+5.  Sample link for Golden State Warriors data source:
     <https://www.basketball-reference.com/teams/GSW/2018.html>
 
-4.  Below is the description of variables in nba2018.csv
+6.  Below is the description of variables in nba2018.csv
 
 -   For any missing values, they represented as 'NA'
 
@@ -208,7 +212,3 @@ Data Dictionary for nba2018.csv
 </tr>
 </tbody>
 </table>
-
-1.  number of rows = 477
-
-2.  number of columns = 38
