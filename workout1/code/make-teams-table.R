@@ -38,13 +38,13 @@ data = mutate(data,
                 (points + rebounds + assists + steals + blocks - 
                    missed_fg - missed_ft - turnovers) / games)
 
-# send the R output of summary() on efficiency to a text ???le named
+# send the R output of summary() on efficiency to a text file named
 # efficiency-summary.txt inside the output/ folder. 
 sink(file = '../output/efficiency-summary.txt')
 summary(data$efficiency)
 sink()
 
-# Send the R output of the teams summary to a text ???le named 
+# Send the R output of the teams summary to a text file named 
 # teams-summary.txt inside the data/ folder
 sink(file = '../output/teams-summary.txt')
 teams = data %>% group_by(team) %>% select(team,
@@ -63,10 +63,10 @@ teams = data %>% group_by(team) %>% select(team,
                                    fouls,
                                    efficiency) %>% 
   summarise_all(funs(sum))
-teams
+summary(teams)
 sink()
 
-# export the teams table to a csv ???le named nba2018-teams.csv,
+# export the teams table to a csv file named nba2018-teams.csv,
 # inside the data/ folder 
 write.csv(teams, '../data/nba2018-teams.csv')
 
